@@ -1,0 +1,42 @@
+[tool.black]
+line-length = 119
+target-version = ['py38']
+quiet = true
+exclude='''
+/(
+    \.git
+  | \.hg
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+
+[tool.poetry]
+name = "webmocket"
+version = "0.1.1"
+description = "Fake websocket server for websocket integration tests."
+authors = ["ahmetkotan <ahmtkotan@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+websockets = "^8.1"
+asyncio = "^3.4.3"
+asgiref = "^3.3.4"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.8.0"
+black = "^20.8b1"
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+#requires = ["poetry-core>=1.0.0"]
+#build-backend = "poetry.core.masonry.api"

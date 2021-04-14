@@ -1,0 +1,5 @@
+include MANIFEST.in
+include README.md
+recursive-include webmocket *.py
+recursive-include examples
+recursive-include screenshots
