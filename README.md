@@ -1,4 +1,4 @@
-# Fake Websocket Mock Server
+# Webmocket
 Fake websocket server for websocket integration tests.
 
 ## Installation
@@ -9,7 +9,7 @@ pip install webmocket
 ## Run
 ```bash
 python -m webmocket.server
-python -m webmocket.server 0.0.0.0 8765
+python -m webmocket.server -b 0.0.0.0 -p 8765
 ```
 
 ## Examples
