@@ -1,16 +1,7 @@
 version: '3'
 
 services:
-  webmocket: &webmocket
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    image: webmocket
+  webmocket:
+    image: dinohunt3r/webmocket
     ports:
     - "8765:8765"
-
-  arguments:
-    <<: *webmocket
-    command: ["--bind", "0.0.0.0", "--port", "8766"]
-    ports:
-    - "8766:8766"

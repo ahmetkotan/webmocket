@@ -1,9 +1,14 @@
 # Webmocket
 Fake websocket server for websocket integration tests.
 
-## Installation
+## Installation on Pypi
 ```bash
 pip install webmocket
+```
+
+## Installation on Docker Hub
+```bash
+docker run --rm -p 8765:8765 --name webmocket dinohunt3r/webmocket
 ```
 
 ## Run
